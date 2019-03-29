@@ -1,0 +1,64 @@
+-------------------------------------------------------
+1. NEWTON SECOND LAW
+-------------------------------------------------------
+SET "massaBenda" equals to 600
+SET "percepatanBenda" equals to 2
+SET "resultanGaya" without any value
+
+CALCULATE "massaBenda" times "percepatanBenda"
+SET "resultanGaya" value with calculation result
+
+DISPLAY "resultanGaya"
+
+---------------------------------------------------------
+2. TAHUN KABISAT
+---------------------------------------------------------
+STORE 'Tahun' to any number
+
+CALCULATE 'Tahun' mod 100
+STORE 'remainder' to the result of calculation
+IF 'remainder' equals to 0
+    CALCULATE 'Tahun' mod 400
+    STORE 'remainder' to the result of calculation
+    IF 'remainder' equals to 0
+        CALCULATE 'Tahun' mod 4
+        STORE 'remainder' to the result of calculation
+        IF 'remainder' equals to 0
+            DISPLAY 'Leap year!'
+        ELSE 
+            DISPLAY 'Bukan leap year!'
+    ELSE
+        DISPLAY 'Bukan leap year!'
+ELSE
+    CALCULATE 'Tahun' mod 4
+    STORE 'remainder' to the result of calculation
+    IF 'remainder' equals to 0
+        DISPLAY 'Leap year!'
+    ELSE 
+        DISPLAY 'Bukan leap year!'
+
+---------------------------------------------------------
+3. LAUNDRY DAY
+---------------------------------------------------------
+STORE "clothCount" to 0
+SET "washingMachine" to off
+
+WHILE "clothCount" < 20
+    ADD "clothCount" by 1
+
+SET "washignMachine" to on
+
+---------------------------------------------------------
+4. PERIKSA KUKU
+---------------------------------------------------------
+STORE "studentCount" to 0
+
+WHILE "studentCount" < 40
+    CHECK "student" for "nailSize"
+        IF "nailSize" is long
+            DO punish "student"
+        ELSE
+            DO commend "student"
+    ADD "studentCount" by 1
+
+
