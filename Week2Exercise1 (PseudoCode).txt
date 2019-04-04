@@ -43,7 +43,7 @@ ELSE
 STORE "clothCount" to 0
 SET "washingMachine" to off
 
-WHILE "clothCount" < 20
+WHILE "clothCount" less than 20
     ADD "clothCount" by 1
 
 SET "washignMachine" to on
@@ -53,7 +53,7 @@ SET "washignMachine" to on
 ---------------------------------------------------------
 STORE "studentCount" to 0
 
-WHILE "studentCount" < 40
+WHILE "studentCount" less than 40
     CHECK "student" for "nailSize"
         IF "nailSize" is long
             DO punish "student"

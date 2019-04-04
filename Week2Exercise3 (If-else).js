@@ -1,9 +1,9 @@
-var nama = "Danu";
-var peran = "Penyihir";
+var nama = "";
+var peran = "";
 
-if (nama === "" || peran === "") {
+if (nama === "") {
   console.log("Nama harus diisi!");
-} else if (nama && peran === "") {
+} else if (peran === "") {
   console.log("Halo " + nama + ", pilih peranmu untuk memulai game!");
 } else if (nama && peran === "Ksatria") {
   console.log("Selamat datang di Dunia Proxytia, " + nama);
@@ -14,4 +14,4 @@ if (nama === "" || peran === "") {
 } else if (nama && peran === "Penyihir") {
   console.log("Selamat datang di Dunia Proxytia, " + nama);
   console.log("Halo Penyihir " + nama + ", ciptakan keajaiban yang membantu kemenanganmu!")
-}
+} 
