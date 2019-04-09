@@ -20,7 +20,7 @@ console.log(hasilPerkalian);
 
 // question 3
 
-function processSentence() {
+function processSentence(name, age, address, hobby) {
     return "Nama Saya " + name + ", umur saya " + age + " tahun, alamat saya di " + address + ", dan saya punya hobby yaitu " + hobby + "!"
   }
   

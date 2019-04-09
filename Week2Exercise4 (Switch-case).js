@@ -4,11 +4,11 @@ var tahun = 2005 // assign nilai variabel tahun disini! (dengan angka antara 190
 
 if((bulan < 1 || bulan > 12) && (tanggal < 1 || tanggal > 31)) {
   console.log("nilai tanggal dan bulan invalid!")
-} else if(bulan < 1 || bulan > 12 || typeof bulan !== "Number") {
+} else if(bulan < 1 || bulan > 12) {
   console.log("nilai bulan invalid!")
-} else if(tanggal < 1 || tanggal > 31 || typeof tanggal !== "Number") {
+} else if(tanggal < 1 || tanggal > 31) {
   console.log("nilai tanggal invalid!")
-} else {
+} else if(tanggal > 0 && tanggal <= 31 && bulan > 0 && bulan <= 12){
     switch (bulan) {
     case 1:
     console.log(tanggal + " Januari " + tahun);
